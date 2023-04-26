@@ -35,6 +35,8 @@ return packer.startup(function(use)
 
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 
+	use("rmehri01/onenord.nvim")
+
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
 	use("szw/vim-maximizer") -- maximizes and restores current window
@@ -111,10 +113,12 @@ return packer.startup(function(use)
 	})
 	use("junegunn/fzf")
 	use("mileszs/ack.vim")
-  use({
-    "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
-})
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
 
 	if packer_bootstrap then
 		require("packer").sync()

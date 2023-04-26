@@ -70,6 +70,12 @@ typescript.setup({
 	},
 })
 
+-- configure erlang server with plugin
+lspconfig["erlangls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 -- configure css server
 lspconfig["cssls"].setup({
 	capabilities = capabilities,
