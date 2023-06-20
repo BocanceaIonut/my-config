@@ -76,3 +76,6 @@ keymap.set("n", "<leader>,", ":b#<CR>")
 
 -- Ack search
 keymap.set("n", "<leader>ag", "<ESC>:Ack!")
+
+-- Search without jumping to next word
+keymap.set("n", "*", ":keepjumps normal! mi*`i<CR>")
