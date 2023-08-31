@@ -131,6 +131,9 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- DAP (Debug Adapter Protocol)
+	use("mfussenegger/nvim-dap")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

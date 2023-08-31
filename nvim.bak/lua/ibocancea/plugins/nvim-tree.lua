@@ -46,8 +46,8 @@ nvimtree.setup({
 		ignore = false,
 	},
 	update_focused_file = {
-		enable = true,
-		update_root = true,
+		enable = false,
+		update_root = false,
 		ignore_list = {},
 	},
 })
