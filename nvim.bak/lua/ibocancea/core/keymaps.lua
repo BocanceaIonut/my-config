@@ -56,7 +56,7 @@ keymap.set("n", "<leader> ", ":Telescope buffers<CR>") -- list open buffers in c
 -- keymap.set("n", "<leader>gs", ":Telescope git_status<CR>") -- list current changes per file with diff preview ["gs" for git status]
 
 -- fzf
-keymap.set("n", "<leader>t", ":FzfLua files<CR>")
+keymap.set("n", "<leader>t", ":FZF<CR>")
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary

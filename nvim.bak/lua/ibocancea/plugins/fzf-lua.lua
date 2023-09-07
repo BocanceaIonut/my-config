@@ -5,6 +5,7 @@ if not fzf_lua_setup then
 end
 
 fzf_lua.setup({
+	preview_opts = "hidden",
 	winopts = {
 		preview = {
 			layout = "vertical",

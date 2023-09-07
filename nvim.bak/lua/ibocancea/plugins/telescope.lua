@@ -15,15 +15,16 @@ telescope.setup({
 	-- picker
 	pickers = {
 		buffers = {
-			sort_lastused = true,
+			sort_mru = true,
+			previewer = false,
 		},
 		find_files = {
 			path_display = { "smart" },
+			previewer = false,
 		},
 	},
 	-- configure custom mappings
 	defaults = {
-		layout_strategy = "vertical",
 		mappings = {
 			i = {
 				["<C-k>"] = actions.move_selection_previous, -- move to prev result
