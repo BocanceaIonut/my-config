@@ -130,6 +130,8 @@ return packer.startup(function(use)
 			})
 		end,
 	})
+	-- DAP (Debug Adapter Protocol)
+	use("mfussenegger/nvim-dap")
 
 	-- DAP (Debug Adapter Protocol)
 	use("mfussenegger/nvim-dap")
