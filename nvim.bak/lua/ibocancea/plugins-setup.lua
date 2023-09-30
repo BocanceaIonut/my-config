@@ -135,6 +135,13 @@ return packer.startup(function(use)
 
 	-- DAP (Debug Adapter Protocol)
 	use("mfussenegger/nvim-dap")
+	use("mxsdev/nvim-dap-vscode-js")
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
+	use({
+		"Joakker/lua-json5",
+		run = "./install.sh",
+	})
+	use("mattkubej/jest.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()

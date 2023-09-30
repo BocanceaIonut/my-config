@@ -135,6 +135,11 @@ _G.packer_plugins = {
     path = "/Users/bocancea/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["jest.nvim"] = {
+    loaded = true,
+    path = "/Users/i.bocancea/.local/share/nvim/site/pack/packer/start/jest.nvim",
+    url = "https://github.com/mattkubej/jest.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/bocancea/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -144,6 +149,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/bocancea/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
+  },
+  ["lua-json5"] = {
+    loaded = true,
+    path = "/Users/i.bocancea/.local/share/nvim/site/pack/packer/start/lua-json5",
+    url = "https://github.com/Joakker/lua-json5"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -189,6 +199,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/i.bocancea/.local/share/nvim/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/Users/i.bocancea/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-dap-vscode-js"] = {
+    loaded = true,
+    path = "/Users/i.bocancea/.local/share/nvim/site/pack/packer/start/nvim-dap-vscode-js",
+    url = "https://github.com/mxsdev/nvim-dap-vscode-js"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
