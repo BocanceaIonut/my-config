@@ -142,6 +142,7 @@ return packer.startup(function(use)
 		run = "./install.sh",
 	})
 	use("mattkubej/jest.nvim")
+	use("lukas-reineke/indent-blankline.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
