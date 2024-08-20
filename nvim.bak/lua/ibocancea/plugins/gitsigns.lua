@@ -6,14 +6,14 @@ end
 
 -- configure/enable gitsigns
 gitsigns.setup({
-	current_line_blame = false,
+	current_line_blame = true,
 	word_diff = false,
 	numhl = true,
 	current_line_blame_opts = {
 		virt_text = true,
 		virt_text_pos = "right_align", -- 'eol' | 'overlay' | 'right_align'
 		delay = 0,
-		ignore_whitespace = false,
+		ignore_whitespace = true,
 	},
 	on_attach = function(bufnr)
 		local gs = package.loaded.gitsigns

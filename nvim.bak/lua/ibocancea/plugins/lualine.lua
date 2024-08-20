@@ -11,6 +11,9 @@ local lualine_nightfly = require("lualine.themes.nightfly")
 local lualine_nord = require("lualine.themes.nord")
 
 -- get lualine nightfly theme
+local lualine_iceberg_dark = require("lualine.themes.iceberg_dark")
+local lualine_iceberg = require("lualine.themes.iceberg")
+local lualine_onedark = require("lualine.themes.onedark")
 local lualine_papercolor_dark = require("lualine.themes.papercolor_dark")
 
 -- new colors for theme
@@ -53,5 +56,8 @@ lualine.setup({
 		-- theme = lualine_nord,
 		theme = lualine_nightfly,
 		-- theme = lualine_papercolor_dark,
+		-- theme = lualine_iceberg_dark,
+		-- theme = lualine_iceberg,
+		-- theme = lualine_onedark,
 	},
 })
