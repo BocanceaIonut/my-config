@@ -10,6 +10,9 @@ local lualine_nightfly = require("lualine.themes.nightfly")
 -- get lualine nightfly theme
 local lualine_nord = require("lualine.themes.nord")
 
+-- get lualine nightfly theme
+local lualine_papercolor_dark = require("lualine.themes.papercolor_dark")
+
 -- new colors for theme
 local new_colors = {
 	blue = "#65D1FF",
@@ -49,5 +52,6 @@ lualine.setup({
 	options = {
 		-- theme = lualine_nord,
 		theme = lualine_nightfly,
+		-- theme = lualine_papercolor_dark,
 	},
 })
