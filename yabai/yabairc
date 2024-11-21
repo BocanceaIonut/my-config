@@ -45,3 +45,4 @@ yabai -m rule --add app="^League of Legends$" manage=off
 yabai -m rule --add app="^Battle.net$" manage=off
 yabai -m rule --add app="^Hearthstone$" manage=off
 yabai -m rule --add app="^AndroidEmulator$" manage=off
+yabai -m rule --add app="^Safari$" manage=off

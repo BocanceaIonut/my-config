@@ -1,4 +1,5 @@
 import = [
+    # "~/.config/alacritty/themes/themes/hyper.toml"
     "~/.config/alacritty/themes/themes/alabaster_dark.toml"
 ]
 
@@ -12,19 +13,19 @@ TERM = "xterm-256color"
 size = 25.0
 
 [font.bold]
-family = "FiraCode Nerd Font Mono"
+family = "FiraCode Nerd Font Propo"
 style = "Bold"
 
 [font.bold_italic]
-family = "FiraCode Nerd Font Mono"
+family = "FiraCode Nerd Font Propo"
 style = "Bold Italic"
 
 [font.italic]
-family = "FiraCode Nerd Font Mono"
+family = "FiraCode Nerd Font Propo"
 style = "Italic"
 
 [font.normal]
-family = "FiraCode Nerd Font Mono"
+family = "FiraCode Nerd Font"
 style = "Regular"
 
 [font.offset]

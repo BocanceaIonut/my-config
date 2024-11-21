@@ -35,8 +35,6 @@ return packer.startup(function(use)
 
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 
-	use("rmehri01/onenord.nvim")
-
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
 	use("szw/vim-maximizer") -- maximizes and restores current window
@@ -143,6 +141,8 @@ return packer.startup(function(use)
 	})
 	use("mattkubej/jest.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
+	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
+	use("rebelot/heirline.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
