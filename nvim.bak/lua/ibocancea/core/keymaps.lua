@@ -2,6 +2,66 @@
 vim.g.mapleader = ","
 
 local keymap = vim.keymap -- for conciseness
+local opts = { noremap = true, silent = true }
+--
+-- BarBar
+--
+
+-- Move to previous/next
+keymap.set("n", "<leader>[", "<Cmd>BufferPrevious<CR>", opts)
+
+keymap.set("n", "<leader>]", "<Cmd>BufferNext<CR>", opts)
+
+-- Re-order to previous/next
+keymap.set("n", "<leader><Left>", "<Cmd>BufferMovePrevious<CR>", opts)
+keymap.set("n", "<leader><Right>", "<Cmd>BufferMoveNext<CR>", opts)
+
+-- Goto buffer in position...
+keymap.set("n", "<leader>1", "<Cmd>BufferGoto 1<CR>", opts)
+keymap.set("n", "<leader>2", "<Cmd>BufferGoto 2<CR>", opts)
+keymap.set("n", "<leader>3", "<Cmd>BufferGoto 3<CR>", opts)
+keymap.set("n", "<leader>4", "<Cmd>BufferGoto 4<CR>", opts)
+keymap.set("n", "<leader>5", "<Cmd>BufferGoto 5<CR>", opts)
+keymap.set("n", "<leader>6", "<Cmd>BufferGoto 6<CR>", opts)
+keymap.set("n", "<leader>7", "<Cmd>BufferGoto 7<CR>", opts)
+keymap.set("n", "<leader>8", "<Cmd>BufferGoto 8<CR>", opts)
+keymap.set("n", "<leader>9", "<Cmd>BufferGoto 9<CR>", opts)
+keymap.set("n", "<leader>0", "<Cmd>BufferLast<CR>", opts)
+
+-- Pin/unpin buffer
+keymap.set("n", "<leader>`", "<Cmd>BufferPin<CR>", opts)
+
+-- Goto pinned/unpinned buffer
+--                 :BufferGotoPinned
+--                 :BufferGotoUnpinned
+
+-- Close buffer
+-- keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
+
+-- Wipeout buffer
+--                 :BufferWipeout
+
+-- Close commands
+--                 :BufferCloseAllButCurrent
+--                 :BufferCloseAllButPinned
+--                 :BufferCloseAllButCurrentOrPinned
+--                 :BufferCloseBuffersLeft
+--                 :BufferCloseBuffersRight
+
+-- Magic buffer-picking mode
+keymap.set("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
+keymap.set("n", "<C-s-p>", "<Cmd>BufferPickDelete<CR>", opts)
+
+-- Sort automatically by...
+keymap.set("n", "<Space>bb", "<Cmd>BufferOrderByBufferNumber<CR>", opts)
+keymap.set("n", "<Space>bn", "<Cmd>BufferOrderByName<CR>", opts)
+keymap.set("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>", opts)
+keymap.set("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>", opts)
+keymap.set("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)
+
+-- Other:
+-- :BarbarEnable - enables barbar (enabled by default)
+-- :BarbarDisable - very bad command, should never be used
 
 ---------------------
 -- General Keymaps
@@ -26,10 +86,10 @@ keymap.set("n", "<leader>-", "<C-x>") -- decrement
 -- keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 -- keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 
-keymap.set("n", "<leader>3", ":tabnew<CR>") -- open new tab
-keymap.set("n", "<leader>4", ":tabclose<CR>") -- close current tab
-keymap.set("n", "<leader>2", ":tabn<CR>") --  go to next tab
-keymap.set("n", "<leader>1", ":tabp<CR>") --  go to previous tab
+-- keymap.set("n", "<leader>3", ":tabnew<CR>") -- open new tab
+-- keymap.set("n", "<leader>4", ":tabclose<CR>") -- close current tab
+-- keymap.set("n", "<leader>2", ":tabn<CR>") --  go to next tab
+-- keymap.set("n", "<leader>1", ":tabp<CR>") --  go to previous tab
 
 ----------------------
 -- Plugin Keybinds

@@ -130,9 +130,6 @@ return packer.startup(function(use)
 	})
 	-- DAP (Debug Adapter Protocol)
 	use("mfussenegger/nvim-dap")
-
-	-- DAP (Debug Adapter Protocol)
-	use("mfussenegger/nvim-dap")
 	use("mxsdev/nvim-dap-vscode-js")
 	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
 	use({
@@ -143,6 +140,22 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 	use("rebelot/heirline.nvim")
+
+	-- Required plugins
+	use("stevearc/dressing.nvim")
+	use("MunifTanjim/nui.nvim")
+	use("MeanderingProgrammer/render-markdown.nvim")
+
+	-- Optional dependencies
+	use("HakonHarnes/img-clip.nvim")
+	use("zbirenbaum/copilot.lua")
+
+	-- Avante.nvim with build process
+	use({
+		"yetone/avante.nvim",
+		branch = "main",
+		run = "make",
+	})
 
 	if packer_bootstrap then
 		require("packer").sync()
